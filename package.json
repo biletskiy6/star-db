@@ -2,7 +2,7 @@
   "name": "star-db",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://biletskiy6.io/star-db",
+  "homepage": "https://biletskiy6.io/star-db/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
