@@ -15,7 +15,7 @@ export default class RandomPlanet extends Component {
 
   componentDidMount() {
     this.updatePlanet();
-    // this.interval = setInterval(this.updatePlanet, 3000);
+    this.interval = setInterval(this.updatePlanet, 3500);
   }
   componentWillUnmount() {
     clearInterval(this.interval);
@@ -54,12 +54,10 @@ export default class RandomPlanet extends Component {
 
     return (
       <div className='random-planet'>
-        <div className='container'>
-          <div className='planet-info jumbotron d-flex'>
-            {errorIndicator}
-            {spinner}
-            {renderPlanet}
-          </div>
+        <div className='planet-info jumbotron d-flex'>
+          {errorIndicator}
+          {spinner}
+          {renderPlanet}
         </div>
       </div>
     );
@@ -75,15 +73,15 @@ const RenderPlanet = ({ planet, getPlanetImage }) => {
         <h3>{name}</h3>
         <ul className='list-group'>
           <li className='list-group-item'>
-            <span>Population</span>
+            <span>Population: </span>
             <span>{population}</span>
           </li>
           <li className='list-group-item'>
-            <span>Population</span>
+            <span>Rotation period: </span>
             <span>{rotationPeriod}</span>
           </li>
           <li className='list-group-item'>
-            <span>Population</span>
+            <span>Diameter: </span>
             <span>{diameter}</span>
           </li>
         </ul>

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import "./header.scss";
 import { Link } from "react-router-dom";
 export default class Header extends Component {
   render() {
     return (
-      <header className='header d-flex navbar navbar-expand-lg navbar-dark bg-dark'>
+      <header className='header d-flex navbar navbar-dark bg-dark'>
         <div className='container'>
           <Link to='/' className='nav-link'>
             Star DB

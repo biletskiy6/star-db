@@ -16,3 +16,13 @@
         font-size: 18px;
     }
 }
+
+@media screen and(max-width: 576px) {
+    .item-details {
+        flex-direction: column;
+
+        img {
+            margin: auto;
+        }
+    }
+}

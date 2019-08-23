@@ -72,9 +72,13 @@ export default class SwapiService {
     };
   };
   transformStarships = starship => {
+    console.log(starship);
     return {
       id: this.extractId(starship),
-      name: starship.name
+      name: starship.name,
+      maxAtmosphereSpeed: starship.max_atmosphering_speed,
+      manufacturer: starship.manufacturer,
+      consumables: starship.consumables
     };
   };
 }

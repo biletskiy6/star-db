@@ -5,6 +5,7 @@ import PeoplePage from "../people-page";
 import ErrorBoundary from "../error-boundary";
 import SwapiService from "../../services/swapi-service";
 import PlanetPage from "../planet-page";
+import StartPage from "../start-page";
 import StarshipsPage from "../starships-page";
 import {
   PeopleDetails,
@@ -17,40 +18,42 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <Router>
+        <Router basename='/star-db/'>
           <ErrorBoundary>
             <Header />
-            <RandomPlanet />
-            <Route
-              path='/'
-              exact
-              component={() => <h2>Welcome to starDB</h2>}
-            />
-            <Route path='/people/' exact component={PeoplePage} />
-            <Route
-              path='/people/:id'
-              component={({ match }) => {
-                const { id } = match.params;
-                return <PeopleDetails data={this.swapiService} itemId={id} />;
-              }}
-            />
-            <Route path='/planets/' exact component={PlanetPage} />
-            <Route
-              path='/planets/:id'
-              exact
-              component={({ match }) => {
-                const { id } = match.params;
-                return <PlanetsDetails data={this.swapiService} itemId={id} />;
-              }}
-            />
-            <Route path='/starships/' exact component={StarshipsPage} />
-            <Route
-              path='/starships/:id'
-              component={({ match }) => {
-                const { id } = match.params;
-                return <StarshipDetails data={this.swapiService} itemId={id} />;
-              }}
-            />
+            <div className='container'>
+              <RandomPlanet />
+              <Route path='/' exact component={StartPage} />
+              <Route path='/people/' exact component={PeoplePage} />
+              <Route
+                path='/people/:id'
+                component={({ match }) => {
+                  const { id } = match.params;
+                  return <PeopleDetails data={this.swapiService} itemId={id} />;
+                }}
+              />
+              <Route path='/planets/' exact component={PlanetPage} />
+              <Route
+                path='/planets/:id'
+                exact
+                component={({ match }) => {
+                  const { id } = match.params;
+                  return (
+                    <PlanetsDetails data={this.swapiService} itemId={id} />
+                  );
+                }}
+              />
+              <Route path='/starships/' exact component={StarshipsPage} />
+              <Route
+                path='/starships/:id'
+                component={({ match }) => {
+                  const { id } = match.params;
+                  return (
+                    <StarshipDetails data={this.swapiService} itemId={id} />
+                  );
+                }}
+              />
+            </div>
           </ErrorBoundary>
         </Router>
       </div>
