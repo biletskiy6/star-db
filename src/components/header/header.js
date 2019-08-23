@@ -16,12 +16,12 @@ export default class Header extends Component {
                 </Link>
               </li>
               <li className='navbar-item'>
-                <Link to='/planets/' className='nav-link'>
+                <Link to='planets/' className='nav-link'>
                   Planets
                 </Link>
               </li>
               <li className='navbar-item'>
-                <Link to='/starships/' className='nav-link'>
+                <Link to='starships/' className='nav-link'>
                   Starships
                 </Link>
               </li>
