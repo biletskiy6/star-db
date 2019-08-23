@@ -11,17 +11,17 @@ export default class Header extends Component {
           <nav className='ml-auto'>
             <ul className='navbar-nav'>
               <li className='navbar-item'>
-                <Link to='people/' className='nav-link'>
+                <Link to='/people/' className='nav-link'>
                   People
                 </Link>
               </li>
               <li className='navbar-item'>
-                <Link to='planets/' className='nav-link'>
+                <Link to='/planets/' className='nav-link'>
                   Planets
                 </Link>
               </li>
               <li className='navbar-item'>
-                <Link to='starships/' className='nav-link'>
+                <Link to='/starships/' className='nav-link'>
                   Starships
                 </Link>
               </li>

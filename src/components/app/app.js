@@ -26,26 +26,26 @@ export default class App extends Component {
               exact
               component={() => <h2>Welcome to starDB</h2>}
             />
-            <Route path='people' exact component={PeoplePage} />
+            <Route path='/people/' exact component={PeoplePage} />
             <Route
-              path='people/:id'
+              path='/people/:id'
               component={({ match }) => {
                 const { id } = match.params;
                 return <PeopleDetails data={this.swapiService} itemId={id} />;
               }}
             />
-            <Route path='planets' exact component={PlanetPage} />
+            <Route path='/planets/' exact component={PlanetPage} />
             <Route
-              path='planets/:id'
+              path='/planets/:id'
               exact
               component={({ match }) => {
                 const { id } = match.params;
                 return <PlanetsDetails data={this.swapiService} itemId={id} />;
               }}
             />
-            <Route path='starships' exact component={StarshipsPage} />
+            <Route path='/starships/' exact component={StarshipsPage} />
             <Route
-              path='starships/:id'
+              path='/starships/:id'
               component={({ match }) => {
                 const { id } = match.params;
                 return <StarshipDetails data={this.swapiService} itemId={id} />;
