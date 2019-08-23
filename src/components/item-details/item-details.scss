@@ -1,0 +1,18 @@
+.item-details {
+    flex: 1;
+
+    img {
+        width: 200px;
+        height: 260px;
+        margin-right: 10px;
+    }
+
+    .list-group {
+        flex: 1;
+    }
+
+    .list-label {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+}
