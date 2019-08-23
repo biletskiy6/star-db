@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/star-db/static/css/main.7d6cf392.chunk.css",
-    "main.js": "/star-db/static/js/main.fdc95e9a.chunk.js",
-    "main.js.map": "/star-db/static/js/main.fdc95e9a.chunk.js.map",
+    "main.js": "/star-db/static/js/main.670b8696.chunk.js",
+    "main.js.map": "/star-db/static/js/main.670b8696.chunk.js.map",
     "runtime~main.js": "/star-db/static/js/runtime~main.a96cccf8.js",
     "runtime~main.js.map": "/star-db/static/js/runtime~main.a96cccf8.js.map",
     "static/js/2.1084bb38.chunk.js": "/star-db/static/js/2.1084bb38.chunk.js",
     "static/js/2.1084bb38.chunk.js.map": "/star-db/static/js/2.1084bb38.chunk.js.map",
     "index.html": "/star-db/index.html",
-    "precache-manifest.b099eec7addda490593ed0b76b91e586.js": "/star-db/precache-manifest.b099eec7addda490593ed0b76b91e586.js",
+    "precache-manifest.3971d127aa5c86fb466baf934474c52b.js": "/star-db/precache-manifest.3971d127aa5c86fb466baf934474c52b.js",
     "service-worker.js": "/star-db/service-worker.js",
     "static/css/main.7d6cf392.chunk.css.map": "/star-db/static/css/main.7d6cf392.chunk.css.map"
   }
